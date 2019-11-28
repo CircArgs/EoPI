@@ -12,8 +12,6 @@ WORKDIR /EoPI
 # copy project to workdir
 COPY . .
 
-# Install requirements and dev requirements through pip. Those should include
-# nostest, pytest or any other test framework you use
-# RUN pip3 install pipenv && pipenv install
 
+RUN ["chmod", "+x", "./.github/actions/testing/entrypoint.sh"]
 ENTRYPOINT ["./.github/actions/testing/entrypoint.sh"]
