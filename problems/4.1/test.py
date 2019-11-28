@@ -21,5 +21,5 @@ def d_parity(x):
 
 def test_parity():
     for i in range(100):
-        n = random.randint(-sys.maxsize, sys.maxsize)
+        n = random.randint(0, sys.maxsize)
         assert d_parity(n) == parity(n)

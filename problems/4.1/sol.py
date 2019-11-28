@@ -22,7 +22,7 @@ def ones(n: int) -> int:
     return int("1" * n.bit_length(), 2)
 
 
-def parity(n: int) -> int:
+def _parity(n: int) -> int:
     bl = n.bit_length()
     if bl < 2:
         return n
@@ -32,3 +32,6 @@ def parity(n: int) -> int:
         temp = n >> (bl // 2)
         return cache_checker((ones(temp) & n) ^ temp)
 
+
+def parity(n:int)->int:
+    return _parity(abs(n))

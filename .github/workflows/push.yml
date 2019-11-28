@@ -1,0 +1,19 @@
+name: On Push
+on:
+  push:
+    branches:
+      - master
+      
+jobs:
+  build:
+    name: Run Pytest
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checking out code...
+      id: checkout
+      uses: actions/checkout@master
+      with:
+        fetch-depth: 1
+    - name: test
+      id: test
+      uses: ./.github/actions/testing
