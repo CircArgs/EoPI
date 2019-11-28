@@ -1,5 +1,5 @@
 # Starting from Python 3 base image
-FROM python:3.7-alpine
+FROM python:3.7
 
 LABEL "com.github.actions.name"="Pytesting"
 LABEL "com.github.actions.description"="Run pytest on problem code."
