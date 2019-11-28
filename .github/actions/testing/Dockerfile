@@ -13,5 +13,5 @@ WORKDIR /EoPI
 COPY . .
 
 
-RUN ["chmod", "+x", "./.github/actions/testing/entrypoint.sh"]
+# RUN ["chmod", "+x", "./.github/actions/testing/entrypoint.sh"]
 ENTRYPOINT ["./.github/actions/testing/entrypoint.sh"]
