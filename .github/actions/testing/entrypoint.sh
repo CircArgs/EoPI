@@ -2,4 +2,4 @@
 
 pip3 install pipenv;
 pipenv install;
-pipenv run pytest --cov=.
+pipenv run python -m pytest --cov=.
