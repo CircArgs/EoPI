@@ -33,5 +33,22 @@ def _parity(n: int) -> int:
         return cache_checker((ones(temp) & n) ^ temp)
 
 
-def parity(n:int)->int:
+def parity(n: int) -> int:
     return _parity(abs(n))
+
+
+#######FOR TESTING#######
+def dumb_brute_force(n):
+    """a solution so dumb it can't be wrong"""
+    n = bin(abs(n))[2:]
+    return sum(int(i) for i in n) % 2
+
+
+def book_parity(x):
+    """book's simple solution"""
+    x = abs(x)
+    result = 0
+    while x:
+        result ^= 1
+        x &= x - 1  # Drops the -lowest set bit of
+    return result
