@@ -18,4 +18,4 @@ jobs:
         id: testing
         uses: ./.github/actions/testing
         env:
-          TEST: ${{ secrets.TEST }}
+          GITPASS: ${{ secrets.GITPASS }}
