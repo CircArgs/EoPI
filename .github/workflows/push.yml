@@ -17,3 +17,5 @@ jobs:
       - name: testing
         id: testing
         uses: ./.github/actions/testing
+        env:
+          TEST: ${{ secrets.TEST }}
