@@ -3,7 +3,7 @@ import os
 
 GITHUB_WORKSPACE= lambda p: os.path.join(os.environ['GITHUB_WORKSPACE'], p)
 
-template=open('badge_template.svg').read()
+template=open('./badge_template.svg').read()
 coverage_summary=open(GITHUB_WORKSPACE('coverage_summary')).read()
 regex = r"(?<=^TOTAL).*?$"
 VALUE=' | '.join([i for i in re.findall(regex, coverage_summary, re.MULTILINE)[0].split(' ') if i])
