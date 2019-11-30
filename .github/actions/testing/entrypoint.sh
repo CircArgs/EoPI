@@ -14,6 +14,7 @@ cp $GITHUB_WORKSPACE/coverage_badge.svg .
 git config remote.origin.url https://CircArgs:$GITPASS@github.com/CircArgs/EoPI.git
 git add .
 git commit -m "push from action"
+git push 
 
 cat $GITHUB_WORKSPACE/coverage_summary
 
