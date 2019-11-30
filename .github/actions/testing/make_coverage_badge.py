@@ -11,7 +11,7 @@ try:
     total=[i for i in re.findall(regex, coverage_summary, re.MULTILINE)[0].split(' ') if i]
     VALUE=f'Stmts: {total[0]} | Miss: {total[1]} | Cover: {total[2]}'
     cover=int(total[2].replace('%', ''))
-     background-image: linear-gradient(to right top, , #5fce00, , , , , , ,, , , );
+
     if cover>=90:
         FILL='#1ac400'
     elif cover>=80:
