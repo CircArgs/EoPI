@@ -1,0 +1,18 @@
+============================= test session starts ==============================
+platform linux -- Python 3.7.5, pytest-5.3.1, py-1.8.0, pluggy-0.13.1
+rootdir: /home/nick/Documents/EoPI
+plugins: hypothesis-4.50.2, cov-2.8.1
+collected 1 item
+
+problems/4.1/test_.py .                                                  [100%]
+
+----------- coverage: platform linux, python 3.7.5-final-0 -----------
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+problems/4.1/sol.py        33      1    97%
+problems/4.1/test_.py       7      0   100%
+-------------------------------------------
+TOTAL                      40      1    98%
+
+
+============================== 1 passed in 0.04s ===============================
