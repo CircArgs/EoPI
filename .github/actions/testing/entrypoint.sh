@@ -2,5 +2,5 @@
 printenv
 pip3 install pipenv;
 pipenv install;
-pipenv run python -m pytest --cov=. >> $GITHUB_WORKSPACE/coverage_summary
-cat $GITHUB_WORKSPACE/coverage_summary
+pipenv run python -m pytest --cov=.
+git status
