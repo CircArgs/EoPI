@@ -36,7 +36,7 @@ except:
     VALUE='FAILED'
 
 
-template=template.replace('THE_NAME', 'COVERAGE')
+template=template.replace('THE_NAME', 'coverage')
 template=template.replace('THE_VALUE', VALUE)
 template=template.replace('THE_FILL', FILL)
 with open(GITHUB_WORKSPACE('coverage_badge.svg'), 'w') as f:
