@@ -19,3 +19,4 @@ jobs:
         uses: ./.github/actions/testing
         env:
           GITPASS: ${{ secrets.GITPASS }}
+          EMAIL: ${{ secrets.EMAIL }}
