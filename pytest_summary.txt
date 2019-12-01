@@ -1,18 +1,32 @@
 ============================= test session starts ==============================
 platform linux -- Python 3.7.5, pytest-5.3.1, py-1.8.0, pluggy-0.13.1
 rootdir: /github/workspace
-plugins: hypothesis-4.50.2, cov-2.8.1
-collected 1 item
+plugins: hypothesis-4.50.4, cov-2.8.1
+collected 0 items / 2 errors
 
-problems/4.1/test_.py .                                                  [100%]
+==================================== ERRORS ====================================
+__________________ ERROR collecting problems/4-1/test_4-1.py ___________________
+ImportError while importing test module '/github/workspace/problems/4-1/test_4-1.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+problems/4-1/test_4-1.py:5: in <module>
+    from .sol import parity, book_parity, dumb_brute_force
+E   ImportError: attempted relative import with no known parent package
+__________________ ERROR collecting problems/5-1/test_5-1.py ___________________
+ImportError while importing test module '/github/workspace/problems/5-1/test_5-1.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+problems/5-1/test_5-1.py:4: in <module>
+    from .sol import solution, extra_space_sol
+E   ImportError: attempted relative import with no known parent package
 
 ----------- coverage: platform linux, python 3.7.5-final-0 -----------
-Name                    Stmts   Miss  Cover
--------------------------------------------
-problems/4.1/sol.py        33      1    97%
-problems/4.1/test_.py       7      0   100%
--------------------------------------------
-TOTAL                      40      1    98%
+Name                       Stmts   Miss  Cover
+----------------------------------------------
+problems/4-1/test_4-1.py       7      4    43%
+problems/5-1/test_5-1.py       8      5    38%
+----------------------------------------------
+TOTAL                         15      9    40%
 
-
-============================== 1 passed in 0.05s ===============================
+!!!!!!!!!!!!!!!!!!! Interrupted: 2 errors during collection !!!!!!!!!!!!!!!!!!!!
+============================== 2 errors in 0.10s ===============================
