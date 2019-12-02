@@ -2,25 +2,20 @@
 platform linux -- Python 3.7.5, pytest-5.3.1, py-1.8.0, pluggy-0.13.1
 rootdir: /github/workspace
 plugins: hypothesis-4.50.4, cov-2.8.1
-collected 1 item / 1 error
+collected 2 items
 
-==================================== ERRORS ====================================
-__________________ ERROR collecting problems/5.1/test_5-1.py ___________________
-ImportError while importing test module '/github/workspace/problems/5.1/test_5-1.py'.
-Hint: make sure your test modules/packages have valid Python names.
-Traceback:
-problems/5.1/test_5-1.py:4: in <module>
-    from sol import sol, extra_space_sol
-E   ImportError: cannot import name 'sol' from 'sol' (/github/workspace/problems/4.1/sol.py)
+problems/4.1/test_4_1.py .                                               [ 50%]
+problems/5.1/test_5_1.py .                                               [100%]
 
 ----------- coverage: platform linux, python 3.7.5-final-0 -----------
 Name                       Stmts   Miss  Cover
 ----------------------------------------------
-problems/4.1/sol.py           33     26    21%
-problems/4.1/test_4-1.py       7      3    57%
-problems/5.1/test_5-1.py       8      5    38%
+problems/4.1/sol_4_1.py       33      1    97%
+problems/4.1/test_4_1.py       7      0   100%
+problems/5.1/sol_5_1.py       51      0   100%
+problems/5.1/test_5_1.py       8      0   100%
 ----------------------------------------------
-TOTAL                         48     34    29%
+TOTAL                         99      1    99%
 
-!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
-=============================== 1 error in 0.11s ===============================
+
+============================== 2 passed in 0.07s ===============================
