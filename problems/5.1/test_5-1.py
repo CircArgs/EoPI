@@ -1,7 +1,7 @@
 import pytest
 import random
 
-from .sol import solution, extra_space_sol
+from sol import sol, extra_space_sol
 
 
 @pytest.fixture

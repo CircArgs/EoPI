@@ -55,7 +55,7 @@ def shift_elements(a, s, e, p):
     return a
 
 
-def solution(l):
+def sol(l):
     return shift_elements(l, 0, len(l) - 1, len(l) // 2)
 
 

@@ -2,7 +2,7 @@ import sys
 import random
 
 
-from .sol import parity, book_parity, dumb_brute_force
+from sol import parity, book_parity, dumb_brute_force
 
 
 def test_parity():
