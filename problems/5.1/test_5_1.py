@@ -11,5 +11,6 @@ def random_list():
 
 
 def test(random_list):
-    assert sorted(random_list) == extra_space_sol(random_list) == sol(random_list)
+    for i in range(100):
+        assert sorted(random_list) == extra_space_sol(random_list) == sol(random_list)
 
