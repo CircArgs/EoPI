@@ -2,23 +2,26 @@
 platform linux -- Python 3.7.5, pytest-5.3.1, py-1.8.0, pluggy-0.13.1
 rootdir: /github/workspace
 plugins: hypothesis-4.50.4, cov-2.8.1
-collected 3 items
+collected 5 items
 
-problems/4.1/test_4_1.py .                                               [ 33%]
-problems/5.1/test_5_1.py .                                               [ 66%]
-problems/5.6/test_5_6.py .                                               [100%]
+problems/4.1/test_4_1.py .                                               [ 20%]
+problems/5.1/test_5_1.py .                                               [ 40%]
+problems/5.6/test_5_6.py .                                               [ 60%]
+problems/6.1/test_6_1.py ..                                              [100%]
 
 ----------- coverage: platform linux, python 3.7.5-final-0 -----------
 Name                       Stmts   Miss  Cover
 ----------------------------------------------
 problems/4.1/sol_4_1.py       39      0   100%
 problems/4.1/test_4_1.py       7      0   100%
-problems/5.1/sol_5_1.py       49      7    86%
+problems/5.1/sol_5_1.py       49      0   100%
 problems/5.1/test_5_1.py       9      0   100%
 problems/5.6/sol_5_6.py       18      0   100%
 problems/5.6/test_5_6.py       8      0   100%
+problems/6.1/sol_6_1.py       32      2    94%
+problems/6.1/test_6_1.py      11      0   100%
 ----------------------------------------------
-TOTAL                        130      7    95%
+TOTAL                        173      2    99%
 
 
-============================== 3 passed in 32.50s ==============================
+========================= 5 passed in 72.34s (0:01:12) =========================
