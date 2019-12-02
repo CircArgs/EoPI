@@ -1,3 +1,12 @@
+"""
+EoPI pg 39
+
+Implement quicksort s.t. at each partitioning elements equal to the pivot are 
+grouped into a central area and teh recurse steps focus only on the left and right elements 
+i.e. elements less than and elements grater than the pivot respectively
+"""
+
+
 def swap(l, a, b):
     temp = l[a]
     l[a] = l[b]
