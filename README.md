@@ -11,7 +11,7 @@
 
 ### For each chapter, first read its introductory text. Use textbooks for relerence only. Unless a problem is italicized, it entails writing code. For Scenario `c*i*`, write and test code for the problems in Columns `*0* to *i* - 1`, and pseudo-code for the problems in Column `*i*`.
 
-<div align="center">
+
 |                                   c0                                   | c1                                                                     | c2                                                                     | c3                                                                   | c4                                                                   |
 | :--------------------------------------------------------------------: | ---------------------------------------------------------------------- | ---------------------------------------------------------------------- | -------------------------------------------------------------------- | -------------------------------------------------------------------- |
 |    [4.1](https://github.com/CircArgs/EoPI/blob/master/problems/4.1)    | [4.7](https://github.com/CircArgs/EoPI/blob/master/problems/4.7)       | [4.8](https://github.com/CircArgs/EoPI/blob/master/problems/4.8)       | [4.3](https://github.com/CircArgs/EoPI/blob/master/problems/4.3)     | [4.9](https://github.com/CircArgs/EoPI/blob/master/problems/4.9)     |
@@ -41,4 +41,3 @@
 |                                                                        |                                                                        | [_20.16_](https://github.com/CircArgs/EoPI/blob/master/problems/20.16) | [18.3](https://github.com/CircArgs/EoPI/blob/master/problems/18.3)   |                                                                      |
 |                                                                        |                                                                        |                                                                        | [_19.9_](https://github.com/CircArgs/EoPI/blob/master/problems/19.9) |                                                                      |
 |                                                                        |                                                                        |                                                                        | [_20.1_](https://github.com/CircArgs/EoPI/blob/master/problems/20.1) |                                                                      |
-</div>
