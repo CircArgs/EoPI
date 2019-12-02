@@ -7,5 +7,6 @@ LABEL "com.github.actions.color"="yellow"
 
 COPY . .
 RUN apk add --no-cache bash
+RUN apk add --no-cache git
 RUN chmod +x /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
