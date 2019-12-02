@@ -6,5 +6,6 @@ LABEL "com.github.actions.icon"="upload-cloud"
 LABEL "com.github.actions.color"="yellow"
 
 COPY . .
+RUN apk add --no-cache bash
 RUN chmod +x /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
