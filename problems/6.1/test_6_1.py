@@ -25,4 +25,3 @@ def test_ints(random_number):
         assert sol_str_to_int(str(random_number)) == book_sol_str_to_int(
             str(random_number)
         )
-

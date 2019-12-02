@@ -13,4 +13,3 @@ def random_list():
 def test(random_list):
     for i in range(10000):
         assert sol(random_list) == book_sol(random_list)
-

@@ -147,4 +147,3 @@ def extra_space_sol(a: list) -> list:
         + [i for i in a if i == p]
         + extra_space_sol([i for i in a if i > p])
     )
-
