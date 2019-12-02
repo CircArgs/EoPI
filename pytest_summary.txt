@@ -1,7 +1,7 @@
 ============================= test session starts ==============================
 platform linux -- Python 3.7.5, pytest-5.3.1, py-1.8.0, pluggy-0.13.1
 rootdir: /github/workspace
-plugins: hypothesis-4.50.4, cov-2.8.1
+plugins: cov-2.8.1, hypothesis-4.50.6
 collected 5 items
 
 problems/4.1/test_4_1.py .                                               [ 20%]
@@ -24,4 +24,4 @@ problems/6.1/test_6_1.py      11      0   100%
 TOTAL                        173      2    99%
 
 
-========================= 5 passed in 72.34s (0:01:12) =========================
+========================= 5 passed in 70.85s (0:01:10) =========================
