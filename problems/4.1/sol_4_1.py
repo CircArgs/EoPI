@@ -28,13 +28,16 @@ def cache_checker(n: int) -> int:
 
 
 # this is barely slower
-# def ones(n):
-#     return 2 ** n.bit_length() - 1
+def ones(n):
+    return 2 ** n.bit_length() - 1
+
+
 # than this:
-def ones(n: int) -> int:
-    if not n:
-        return 1
-    return int("1" * n.bit_length(), 2)
+# def ones(n: int) -> int:
+#     if not n:
+#         return 1
+#     return int("1" * n.bit_length(), 2)
+# but uses less memory in avoiding strings
 
 
 def _parity(n: int) -> int:
