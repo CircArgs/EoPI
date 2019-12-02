@@ -14,7 +14,9 @@ cp $GITHUB_WORKSPACE/coverage_badge.svg .
 cp $GITHUB_WORKSPACE/coverage_summary ./pytest_summary.txt
 git config remote.origin.url https://CircArgs:$GITPASS@github.com/CircArgs/EoPI.git
 git add .
-git commit -m "push from action"
+git_hash=$(git rev-parse --short "$GITHUB_SHA")
+git_branch=${GITHUB_REF##*/}
+git commit -m "push from action of $git_branch with commit hash $git_hash"
 git push 
 
 cat $GITHUB_WORKSPACE/coverage_summary
