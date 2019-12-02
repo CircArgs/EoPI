@@ -9,7 +9,7 @@
 
 ---
 
-### For each chapter, first read its introductory text. Use textbooks for relerence only. Unless a problem is italicized, it entails writing code. For Scenario `c*i*`, write and test code for the problems in Columns `*0* to *i* - 1`, and pseudo-code for the problems in Column `*i*`.
+### For each chapter, first read its introductory text. Use textbooks for relerence only. Unless a problem is italicized, it entails writing code. For Scenario `c*i*`, write and test code for the problems in Columns `0 to i - 1`, and pseudo-code for the problems in Column `i`.
 
 
 |                                   c0                                   | c1                                                                     | c2                                                                     | c3                                                                   | c4                                                                   |
