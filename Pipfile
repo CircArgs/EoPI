@@ -6,12 +6,12 @@ verify_ssl = true
 [dev-packages]
 black = "*"
 jupyter = "*"
-
-[packages]
 pytest = "*"
 hypothesis = "*"
-gitpython = "*"
 pytest-cov = "*"
+
+[packages]
+
 
 [requires]
 python_version = "3.7"
