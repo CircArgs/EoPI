@@ -9,9 +9,17 @@ class Node:
 
 def iter_linked_list(l):
     curr = l.head
-    for i in range(l.length):
+    while curr != None:
         yield curr
         curr = curr.next
+
+
+def destructive_left_iter_linked_list(l):
+    curr = l.popleft()
+    while curr.next != None:
+        yield curr
+        curr = l.popleft()
+    yield curr
 
 
 class Linked_List:
@@ -24,11 +32,12 @@ class Linked_List:
         return self.length
 
     def __bool__(self):
-        return bool(self.length)
+        return self.length > 0
 
     def push_list(self, l):
         if not isinstance(l, Linked_List):
             raise TypeError(f"Can only push lists using this method not type {type(l)}")
+
         self.tail.next = l.head
         self.tail = l.tail
         self.length += l.length
@@ -38,6 +47,7 @@ class Linked_List:
             raise TypeError(
                 f"Can only push Nodes onto the linked list not {type(node)}"
             )
+
         if self.head == None:
             self.head = node
             self.tail = node
@@ -45,6 +55,12 @@ class Linked_List:
             self.tail.next = node
             self.tail = node
             self.length += 1
+
+    def popleft(self):
+        ret = self.head
+        self.head = self.head.next
+        self.length -= 1
+        return ret
 
     def pop(self):
         curr = self.head
@@ -54,7 +70,7 @@ class Linked_List:
         ret = curr.next
         curr.next = None
         length -= 1
-        return ret.value
+        return ret
 
     def __repr__(self):
         return (
@@ -76,3 +92,6 @@ class Linked_List:
 
     def iter(self):
         return iter_linked_list(self)
+
+    def deathiter(self):
+        return destructive_left_iter_linked_list(self)

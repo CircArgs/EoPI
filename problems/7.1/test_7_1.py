@@ -1,5 +1,7 @@
 import random
-from sol_7_1 import sol, Linked_List
+
+from utils_7_1 import Linked_List
+from sol_7_1 import sol
 
 
 def random_list():
@@ -7,10 +9,12 @@ def random_list():
 
 
 def test():
-    for _ in range(100):
+    for i in range(100):
         rl1 = sorted(random_list())
         rl2 = sorted(random_list())
         test_list = sorted(rl1 + rl2)
         rll1 = Linked_List.from_list(rl1)
         rll2 = Linked_List.from_list(rl2)
-        assert test_list == list(map(lambda x: x.val, sol(rll1, rll2).iter()))
+
+        fin = sol(rll1, rll2)
+        assert test_list == list(map(lambda x: x.val, fin.iter()))
