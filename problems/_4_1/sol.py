@@ -87,25 +87,25 @@ def _parity(n: int) -> int:
 cache = Cache(_parity)
 
 
-def parity(n: int) -> int:
+def sol(n: int) -> int:
     return _parity(abs(n))
 
 
 #######FOR TESTING#######
-def dumb_brute_force(n: int) -> int:
-    """a solution so dumb it can't be wrong"""
-    n = bin(abs(n))[2:]
-    return sum(int(i) for i in n) % 2
+# def dumb_brute_force(n: int) -> int:
+#     """a solution so dumb it can't be wrong"""
+#     n = bin(abs(n))[2:]
+#     return sum(int(i) for i in n) % 2
 
 
-def book_parity(x: int) -> int:
-    """book's simple solution"""
-    x = abs(x)
-    result = 0
-    while x:
-        result ^= 1
-        x &= x - 1  # Drops the -lowest set bit of
-    return result
+# def book_parity(x: int) -> int:
+#     """book's simple solution"""
+#     x = abs(x)
+#     result = 0
+#     while x:
+#         result ^= 1
+#         x &= x - 1  # Drops the -lowest set bit of
+#     return result
 
 
 # warm start caches
