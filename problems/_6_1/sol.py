@@ -20,6 +20,8 @@ def sol_int_to_str(n: int) -> str:
     Returns:
         n as string
     """
+    if n == 0:
+        return "0"
     ret = ""
     is_negative = n < 0
     n = abs(n)
