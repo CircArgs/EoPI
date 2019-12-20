@@ -6,10 +6,10 @@ collected 7 items
 
 problems/7.1/test_7_1.py .                                               [ 14%]
 problems/8.1/test_8_1.py .                                               [ 28%]
-problems/_5_6/test_5_6.py .                                              [ 42%]
-problems/_6_1/test_6_1.py ..                                             [ 71%]
-testing/test_4_1.py .                                                    [ 85%]
-testing/test_5_1.py .                                                    [100%]
+problems/_6_1/test_6_1.py ..                                             [ 57%]
+testing/test_4_1.py .                                                    [ 71%]
+testing/test_5_1.py .                                                    [ 85%]
+testing/test_5_6.py .                                                    [100%]
 
 ----------- coverage: platform linux, python 3.7.5-final-0 -----------
 Name                             Stmts   Miss  Cover
@@ -19,21 +19,20 @@ problems/7.1/test_7_1.py            14      0   100%
 problems/7.1/utils_7_1.py           68     14    79%
 problems/8.1/sol_8_1.py             24      6    75%
 problems/8.1/test_8_1.py            14      0   100%
-problems/_4_1/__init__.py            0      0   100%
 problems/_4_1/sol.py                29      0   100%
 problems/_5_1/sol.py                51      0   100%
-problems/_5_6/sol_5_6.py            18      0   100%
-problems/_5_6/test_5_6.py            8      0   100%
-problems/_6_1/sol_6_1.py            32      1    97%
+problems/_5_6/sol.py                11      0   100%
+problems/_6_1/sol_6_1.py            32      0   100%
 problems/_6_1/test_6_1.py           11      0   100%
 problems/__init__.py                 0      0   100%
 testing/__init__.py                  3      0   100%
 testing/test_4_1.py                 11      0   100%
-testing/test_5_1.py                 11      0   100%
+testing/test_5_1.py                 12      0   100%
+testing/test_5_6.py                 13      0   100%
 testing/test_utils/__init__.py       0      0   100%
 testing/test_utils/read_tsv.py      18      0   100%
 ----------------------------------------------------
-TOTAL                              340     23    93%
+TOTAL                              339     22    94%
 
 
-======================== 7 passed in 374.58s (0:06:14) =========================
+======================== 7 passed in 302.16s (0:05:02) =========================
