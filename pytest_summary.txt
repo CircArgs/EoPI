@@ -2,37 +2,37 @@
 platform linux -- Python 3.7.5, pytest-5.3.2, py-1.8.0, pluggy-0.13.1
 rootdir: /github/workspace
 plugins: cov-2.8.1
-collected 7 items
+collected 6 items
 
-problems/7.1/test_7_1.py .                                               [ 14%]
-problems/8.1/test_8_1.py .                                               [ 28%]
-problems/_6_1/test_6_1.py ..                                             [ 57%]
-testing/test_4_1.py .                                                    [ 71%]
-testing/test_5_1.py .                                                    [ 85%]
-testing/test_5_6.py .                                                    [100%]
+problems/_7_1/test_7_1.py .                                              [ 16%]
+problems/_8_1/test_8_1.py .                                              [ 33%]
+testing/test_4_1.py .                                                    [ 50%]
+testing/test_5_1.py .                                                    [ 66%]
+testing/test_5_6.py .                                                    [ 83%]
+testing/test_6_1.py .                                                    [100%]
 
 ----------- coverage: platform linux, python 3.7.5-final-0 -----------
 Name                             Stmts   Miss  Cover
 ----------------------------------------------------
-problems/7.1/sol_7_1.py             28      2    93%
-problems/7.1/test_7_1.py            14      0   100%
-problems/7.1/utils_7_1.py           68     14    79%
-problems/8.1/sol_8_1.py             24      6    75%
-problems/8.1/test_8_1.py            14      0   100%
 problems/_4_1/sol.py                29      0   100%
 problems/_5_1/sol.py                51      0   100%
 problems/_5_6/sol.py                11      0   100%
-problems/_6_1/sol_6_1.py            32      1    97%
-problems/_6_1/test_6_1.py           11      0   100%
+problems/_6_1/sol.py                34     11    68%
+problems/_7_1/sol_7_1.py            28      2    93%
+problems/_7_1/test_7_1.py           14      0   100%
+problems/_7_1/utils_7_1.py          68     14    79%
+problems/_8_1/sol_8_1.py            24      6    75%
+problems/_8_1/test_8_1.py           14      0   100%
 problems/__init__.py                 0      0   100%
 testing/__init__.py                  3      0   100%
 testing/test_4_1.py                 11      0   100%
 testing/test_5_1.py                 12      0   100%
 testing/test_5_6.py                 13      0   100%
+testing/test_6_1.py                 13      0   100%
 testing/test_utils/__init__.py       0      0   100%
 testing/test_utils/read_tsv.py      18      0   100%
 ----------------------------------------------------
-TOTAL                              339     23    93%
+TOTAL                              343     33    90%
 
 
-======================== 7 passed in 299.81s (0:04:59) =========================
+======================== 6 passed in 318.26s (0:05:18) =========================
