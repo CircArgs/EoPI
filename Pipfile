@@ -5,9 +5,7 @@ verify_ssl = true
 
 [dev-packages]
 black = "*"
-jupyter = "*"
 pytest = "*"
-hypothesis = "*"
 pytest-cov = "*"
 
 
