@@ -15,6 +15,10 @@ class Stack:
     def __len__(self):
         return len(self.values)
 
+    @property
+    def empty(self):
+        return len(self.values) == 0
+
     def push(self, v):
         self.values.append(Stack_Value(v, self.max_val))
 

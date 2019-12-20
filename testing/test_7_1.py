@@ -1,4 +1,3 @@
-from dataclasses import dataclass
 from typing import List
 from .test_utils.read_tsv import read_tsv
 
