@@ -6,6 +6,12 @@ class Node:
     def __repr__(self):
         return "Node(" + str(self.val) + ")"
 
+    def __eq__(self, other):
+        try:
+            return self.val == other.val
+        except:
+            return False
+
 
 def iter_linked_list(l):
     curr = l.head
@@ -24,7 +30,10 @@ def destructive_left_iter_linked_list(l):
 
 class Linked_List:
     def __init__(self, head=None):
-        self.length = 1
+        if head:
+            self.length = 1
+        else:
+            self.length = 0
         self.head = head
         self.tail = head
 
@@ -81,10 +90,18 @@ class Linked_List:
 
     @classmethod
     def from_list(cls, l):
+        if not l:
+            return cls()
         ret = cls(Node(l[0]))
         for i in range(1, len(l)):
             ret.push(Node(l[i]))
         return ret
+
+    def to_list(self):
+        if self.length:
+            return [n.val for n in self.iter()]
+        else:
+            return []
 
     @staticmethod
     def Node(*args):

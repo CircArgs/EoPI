@@ -1,4 +1,3 @@
-from dataclasses import dataclass
 from .test_utils.read_tsv import read_tsv
 
 import problems._6_1.sol as solution
