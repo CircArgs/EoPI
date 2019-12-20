@@ -11,9 +11,7 @@ class test_schema:
     desc: str = ""
 
 
-def test_parity():
-    test_data = read_tsv(
-        "/home/nick/Documents/EoPI/test_problems/test_data/4_1.tsv", test_schema
-    )
+def test():
+    test_data = read_tsv("4_1.tsv", test_schema)
     for test in test_data:
         assert solution.sol(test.test) == test.sol, test.desc

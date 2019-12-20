@@ -2,6 +2,7 @@
 
 
 from dataclasses import dataclass
+import os
 
 
 def __interpret(s: str) -> object:
@@ -11,18 +12,25 @@ def __interpret(s: str) -> object:
         return s
 
 
-def read_tsv(path: str, schema):
+def read_tsv(tsv: str, schema):
     """
     Description: 
         utility for reading testing data from a tsv
 
     Args:
-        path: os path to tsv to read
+        tsv: name of test data tsv i.e. 4_1.tsv
         schema (dataclass): a class of python 3.7+ @dataclass defining the structure of a line of tab separated data
     
 
     """
-    with open(path) as file:
+
+    with open(
+        os.path.join(
+            os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+            "test_data",
+            tsv,
+        )
+    ) as file:
         data = file.read()
     data = data.split("\n")
     data = [row for row in data if row]

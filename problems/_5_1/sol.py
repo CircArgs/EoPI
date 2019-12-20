@@ -2,7 +2,7 @@
 EoPI pg 39
 
 Implement quicksort s.t. at each partitioning elements equal to the pivot are 
-grouped into a central area and teh recurse steps focus only on the left and right elements 
+grouped into a central area and the recurse steps focus only on the left and right elements 
 i.e. elements less than and elements grater than the pivot respectively
 
 Example:
@@ -126,6 +126,8 @@ def sol(l: list) -> list:
     Returns:
         l sorted inplace
     """
+    if len(l) < 2:
+        return l
     return shift_elements(l, 0, len(l) - 1, len(l) // 2)
 
 

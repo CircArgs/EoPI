@@ -4,7 +4,7 @@ from sol_8_1 import Stack
 
 
 def test():
-    for _ in range(1000):
+    for _ in range(1):
         s = Stack()
         m = -float("inf")
         n = random.randint(0, 10000)
