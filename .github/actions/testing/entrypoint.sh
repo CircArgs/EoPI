@@ -3,9 +3,13 @@
 set -e
 
 printenv
+echo "Installing pipenv"
 pip3 install pipenv;
+echo "Pipenv initiating venv"
 pipenv install;
+echo "Running pytest"
 pipenv run python -m pytest --cov=. >> $GITHUB_WORKSPACE/coverage_summary
+echo "Formatting Repo Coverage Badge"
 pipenv run python .github/actions/testing/make_coverage_badge.py
 mkdir badges
 cd badges
