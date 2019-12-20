@@ -6,7 +6,7 @@ printenv
 echo "Installing pipenv"
 pip3 install pipenv;
 echo "Pipenv initiating venv"
-pipenv install --dev
+pipenv install
 echo "Running pytest"
 pipenv run python -m pytest --cov=. >> $GITHUB_WORKSPACE/coverage_summary
 echo "Formatting Repo Coverage Badge"
