@@ -4,12 +4,12 @@ rootdir: /github/workspace
 plugins: cov-2.8.1
 collected 6 items
 
-problems/_8_1/test_8_1.py .                                              [ 16%]
-testing/test_4_1.py .                                                    [ 33%]
-testing/test_5_1.py .                                                    [ 50%]
-testing/test_5_6.py .                                                    [ 66%]
-testing/test_6_1.py .                                                    [ 83%]
-testing/test_7_1.py .                                                    [100%]
+testing/test_4_1.py .                                                    [ 16%]
+testing/test_5_1.py .                                                    [ 33%]
+testing/test_5_6.py .                                                    [ 50%]
+testing/test_6_1.py .                                                    [ 66%]
+testing/test_7_1.py .                                                    [ 83%]
+testing/test_8_1.py .                                                    [100%]
 
 ----------- coverage: platform linux, python 3.7.5-final-0 -----------
 Name                             Stmts   Miss  Cover
@@ -20,19 +20,19 @@ problems/_5_6/sol.py                11      0   100%
 problems/_6_1/sol.py                34     11    68%
 problems/_7_1/sol.py                28      0   100%
 problems/_7_1/utils.py              81     15    81%
-problems/_8_1/sol_8_1.py            24      6    75%
-problems/_8_1/test_8_1.py           14      0   100%
+problems/_8_1/sol.py                26      3    88%
 problems/__init__.py                 0      0   100%
 testing/__init__.py                  3      0   100%
 testing/test_4_1.py                 11      0   100%
 testing/test_5_1.py                 12      0   100%
 testing/test_5_6.py                 13      0   100%
 testing/test_6_1.py                 12      0   100%
-testing/test_7_1.py                 15      0   100%
+testing/test_7_1.py                 14      0   100%
+testing/test_8_1.py                 23      2    91%
 testing/test_utils/__init__.py       0      0   100%
 testing/test_utils/read_tsv.py      18      0   100%
 ----------------------------------------------------
-TOTAL                              356     32    91%
+TOTAL                              366     31    92%
 
 
-======================== 6 passed in 306.90s (0:05:06) =========================
+======================== 6 passed in 283.68s (0:04:43) =========================
