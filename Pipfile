@@ -9,7 +9,7 @@ jupyter = "*"
 pytest = "*"
 hypothesis = "*"
 pytest-cov = "*"
-pytest-mypy = "*"
+
 
 [packages]
 
