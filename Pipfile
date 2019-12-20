@@ -9,9 +9,9 @@ jupyter = "*"
 pytest = "*"
 hypothesis = "*"
 pytest-cov = "*"
+pytest-mypy = "*"
 
 [packages]
-
 
 [requires]
 python_version = "3.7"
