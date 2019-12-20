@@ -5,7 +5,8 @@ GITHUB_WORKSPACE = lambda p: os.path.join(os.environ["GITHUB_WORKSPACE"], p)
 
 template = open(".github/actions/testing/badge_template.svg").read()
 coverage_summary = open(GITHUB_WORKSPACE("coverage_summary")).read()
-
+FILL = "red"
+VALUE = "failing"
 try:
     regex = r"(?<=^TOTAL).*?$"
     total = [
@@ -32,10 +33,9 @@ try:
         FILL = "#ff774d"
     elif cover >= 10:
         FILL = "#fb5f5f"
-    else:
-        FILL = "red"
+
 except:
-    VALUE = "FAILED"
+    pass
 
 
 template = template.replace("THE_NAME", "coverage")

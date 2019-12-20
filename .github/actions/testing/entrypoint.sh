@@ -1,4 +1,7 @@
 #!/usr/bin/env bash
+
+set -e
+
 printenv
 pip3 install pipenv;
 pipenv install;
