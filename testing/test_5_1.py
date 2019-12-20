@@ -1,4 +1,5 @@
 from dataclasses import dataclass
+from typing import List
 from .test_utils.read_tsv import read_tsv
 
 import problems._5_1.sol as solution
@@ -6,8 +7,8 @@ import problems._5_1.sol as solution
 
 @dataclass
 class test_schema:
-    test: list
-    sol: list
+    test: List[float]
+    sol: List[float]
     desc: str = ""
 
 
