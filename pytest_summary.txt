@@ -22,7 +22,7 @@ problems/8.1/test_8_1.py            14      0   100%
 problems/_4_1/sol.py                29      0   100%
 problems/_5_1/sol.py                51      0   100%
 problems/_5_6/sol.py                11      0   100%
-problems/_6_1/sol_6_1.py            32      0   100%
+problems/_6_1/sol_6_1.py            32      1    97%
 problems/_6_1/test_6_1.py           11      0   100%
 problems/__init__.py                 0      0   100%
 testing/__init__.py                  3      0   100%
@@ -32,7 +32,7 @@ testing/test_5_6.py                 13      0   100%
 testing/test_utils/__init__.py       0      0   100%
 testing/test_utils/read_tsv.py      18      0   100%
 ----------------------------------------------------
-TOTAL                              339     22    94%
+TOTAL                              339     23    93%
 
 
-======================== 7 passed in 302.16s (0:05:02) =========================
+======================== 7 passed in 299.81s (0:04:59) =========================
