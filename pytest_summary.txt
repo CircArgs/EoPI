@@ -6,40 +6,10 @@ collected 7 items
 
 problems/7.1/test_7_1.py .                                               [ 14%]
 problems/8.1/test_8_1.py .                                               [ 28%]
-problems/_5_1/test_5_1.py .                                              [ 42%]
-problems/_5_6/test_5_6.py .                                              [ 57%]
-problems/_6_1/test_6_1.py ..                                             [ 85%]
-testing/test_4_1.py F                                                    [100%]
-
-=================================== FAILURES ===================================
-_________________________________ test_parity __________________________________
-
-    def test_parity():
-        test_data = read_tsv(
->           "/home/nick/Documents/EoPI/test_problems/test_data/4_1.tsv", test_schema
-        )
-
-testing/test_4_1.py:16: 
-_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
-
-path = '/home/nick/Documents/EoPI/test_problems/test_data/4_1.tsv'
-schema = <class 'testing.test_4_1.test_schema'>
-
-    def read_tsv(path: str, schema):
-        """
-        Description:
-            utility for reading testing data from a tsv
-    
-        Args:
-            path: os path to tsv to read
-            schema (dataclass): a class of python 3.7+ @dataclass defining the structure of a line of tab separated data
-    
-    
-        """
->       with open(path) as file:
-E       FileNotFoundError: [Errno 2] No such file or directory: '/home/nick/Documents/EoPI/test_problems/test_data/4_1.tsv'
-
-testing/test_utils/read_tsv.py:25: FileNotFoundError
+problems/_5_6/test_5_6.py .                                              [ 42%]
+problems/_6_1/test_6_1.py ..                                             [ 71%]
+testing/test_4_1.py .                                                    [ 85%]
+testing/test_5_1.py .                                                    [100%]
 
 ----------- coverage: platform linux, python 3.7.5-final-0 -----------
 Name                             Stmts   Miss  Cover
@@ -50,19 +20,20 @@ problems/7.1/utils_7_1.py           68     14    79%
 problems/8.1/sol_8_1.py             24      6    75%
 problems/8.1/test_8_1.py            14      0   100%
 problems/_4_1/__init__.py            0      0   100%
-problems/_4_1/sol.py                29      1    97%
-problems/_5_1/sol_5_1.py            49      0   100%
-problems/_5_1/test_5_1.py            9      0   100%
+problems/_4_1/sol.py                29      0   100%
+problems/_5_1/sol.py                51      0   100%
 problems/_5_6/sol_5_6.py            18      0   100%
 problems/_5_6/test_5_6.py            8      0   100%
 problems/_6_1/sol_6_1.py            32      1    97%
 problems/_6_1/test_6_1.py           11      0   100%
 problems/__init__.py                 0      0   100%
 testing/__init__.py                  3      0   100%
-testing/test_4_1.py                 11      2    82%
+testing/test_4_1.py                 11      0   100%
+testing/test_5_1.py                 11      0   100%
 testing/test_utils/__init__.py       0      0   100%
-testing/test_utils/read_tsv.py      17     13    24%
+testing/test_utils/read_tsv.py      18      0   100%
 ----------------------------------------------------
-TOTAL                              335     39    88%
+TOTAL                              340     23    93%
 
-=================== 1 failed, 6 passed in 420.45s (0:07:00) ====================
+
+======================== 7 passed in 374.58s (0:06:14) =========================
