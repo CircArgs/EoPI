@@ -1,5 +1,5 @@
 ============================= test session starts ==============================
-platform linux -- Python 3.7.5, pytest-5.3.2, py-1.8.0, pluggy-0.13.1
+platform linux -- Python 3.7.6, pytest-5.3.2, py-1.8.0, pluggy-0.13.1
 rootdir: /github/workspace
 plugins: cov-2.8.1
 collected 6 items
@@ -11,7 +11,7 @@ testing/test_6_1.py .                                                    [ 66%]
 testing/test_7_1.py .                                                    [ 83%]
 testing/test_8_1.py .                                                    [100%]
 
------------ coverage: platform linux, python 3.7.5-final-0 -----------
+----------- coverage: platform linux, python 3.7.6-final-0 -----------
 Name                             Stmts   Miss  Cover
 ----------------------------------------------------
 problems/_4_1/sol.py                29      0   100%
@@ -19,9 +19,11 @@ problems/_5_1/sol.py                51      0   100%
 problems/_5_6/sol.py                11      0   100%
 problems/_6_1/sol.py                34     11    68%
 problems/_7_1/sol.py                28      0   100%
-problems/_7_1/utils.py              81     15    81%
 problems/_8_1/sol.py                26      3    88%
 problems/__init__.py                 0      0   100%
+problems/utils/__init__.py           0      0   100%
+problems/utils/binary_tree.py       14     14     0%
+problems/utils/linked_list.py       81     15    81%
 testing/__init__.py                  3      0   100%
 testing/test_4_1.py                 11      0   100%
 testing/test_5_1.py                 12      0   100%
@@ -32,7 +34,7 @@ testing/test_8_1.py                 23      2    91%
 testing/test_utils/__init__.py       0      0   100%
 testing/test_utils/read_tsv.py      18      0   100%
 ----------------------------------------------------
-TOTAL                              366     31    92%
+TOTAL                              380     45    88%
 
 
-======================== 6 passed in 283.68s (0:04:43) =========================
+======================== 6 passed in 266.63s (0:04:26) =========================
