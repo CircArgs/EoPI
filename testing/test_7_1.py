@@ -2,7 +2,7 @@ from typing import List
 from .test_utils.read_tsv import read_tsv
 
 import problems._7_1.sol as solution
-from problems._7_1.utils import Linked_List
+from problems.utils.linked_list import Linked_List
 
 
 class test_schema:

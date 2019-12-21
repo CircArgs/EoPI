@@ -6,7 +6,7 @@ Write a program that takes two lists, assumed to be sorted, and returns their me
 """
 
 
-from .utils import Linked_List
+from ..utils.linked_list import Linked_List
 
 
 def sol(l1, l2):
