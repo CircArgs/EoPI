@@ -2,6 +2,10 @@ import math
 
 
 class BinaryTreeNode:
+    """
+    A node in a tree storing a value and references to parent and children if they exist
+    """
+
     def __init__(
         self, value: int, parent=None, left_child=None, right_child=None,
     ):
@@ -23,6 +27,9 @@ class BinaryTreeNode:
     @property
     def children(self):
         return self.left_child, self.right_child
+
+    def __repr__(self):
+        return f"BinaryTreeNode({self.value})"
 
 
 def height_from_list(l: list) -> int:
@@ -68,9 +75,11 @@ def tree_from_list(l: list) -> BinaryTreeNode:
             for n, node in enumerate(curr):
                 # get the parent node
                 temp = layer[n // 2]
-                # TODO: handle the null nodes
                 if not node is None:
-                    # empty child node doesnt get attached to anything
+                    # if the node we're looking to hook up were null we wouldnt want to do anything
+                    node.parent = temp
+                if temp is None:
+                    # if the current parent we're looking to hook up to is None then there cant be any children
                     pass
                 elif l_or_r % 2 == 0:
                     temp.left_child = node
