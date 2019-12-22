@@ -2,14 +2,36 @@
 platform linux -- Python 3.7.6, pytest-5.3.2, py-1.8.0, pluggy-0.13.1
 rootdir: /github/workspace
 plugins: cov-2.8.1
-collected 6 items
+collected 7 items
 
-testing/test_4_1.py .                                                    [ 16%]
-testing/test_5_1.py .                                                    [ 33%]
-testing/test_5_6.py .                                                    [ 50%]
-testing/test_6_1.py .                                                    [ 66%]
-testing/test_7_1.py .                                                    [ 83%]
-testing/test_8_1.py .                                                    [100%]
+testing/test_4_1.py .                                                    [ 14%]
+testing/test_5_1.py .                                                    [ 28%]
+testing/test_5_6.py .                                                    [ 42%]
+testing/test_6_1.py .                                                    [ 57%]
+testing/test_7_1.py .                                                    [ 71%]
+testing/test_8_1.py .                                                    [ 85%]
+testing/test_9_1.py F                                                    [100%]
+
+=================================== FAILURES ===================================
+_____________________________________ test _____________________________________
+
+    def test():
+>       test_data = read_tsv("9_1.tsv", test_schema)
+
+testing/test_9_1.py:18: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+testing/test_utils/read_tsv.py:41: in read_tsv
+    ret[line_number] = schema(*cols)
+testing/test_9_1.py:12: in __init__
+    self.test = [int(v) for v in test]
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+.0 = <list_iterator object at 0x7f3e3427d090>
+
+>   self.test = [int(v) for v in test]
+E   ValueError: invalid literal for int() with base 10: 'null'
+
+testing/test_9_1.py:12: ValueError
 
 ----------- coverage: platform linux, python 3.7.6-final-0 -----------
 Name                             Stmts   Miss  Cover
@@ -20,9 +42,10 @@ problems/_5_6/sol.py                11      0   100%
 problems/_6_1/sol.py                34     11    68%
 problems/_7_1/sol.py                28      0   100%
 problems/_8_1/sol.py                26      3    88%
+problems/_9_1/sol.py                17     12    29%
 problems/__init__.py                 0      0   100%
 problems/utils/__init__.py           0      0   100%
-problems/utils/binary_tree.py       14     14     0%
+problems/utils/binary_tree.py       49     40    18%
 problems/utils/linked_list.py       81     15    81%
 testing/__init__.py                  3      0   100%
 testing/test_4_1.py                 11      0   100%
@@ -31,10 +54,10 @@ testing/test_5_6.py                 13      0   100%
 testing/test_6_1.py                 12      0   100%
 testing/test_7_1.py                 14      0   100%
 testing/test_8_1.py                 23      2    91%
+testing/test_9_1.py                 17      5    71%
 testing/test_utils/__init__.py       0      0   100%
 testing/test_utils/read_tsv.py      18      0   100%
 ----------------------------------------------------
-TOTAL                              380     45    88%
+TOTAL                              449     88    80%
 
-
-======================== 6 passed in 266.63s (0:04:26) =========================
+=================== 1 failed, 6 passed in 299.95s (0:04:59) ====================
