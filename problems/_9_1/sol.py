@@ -1,14 +1,24 @@
-from ..utils.binary_tree import BinaryTreeNode
+from ..utils.binary_tree import BinaryTreeNode as BTN
 
 
-def height(root: BinaryTreeNode) -> int:
+class UnbalancedTree(Exception):
+    pass
+
+
+def balance_check(root: BTN) -> int:
     if root is None:
         return 0
+    lh = balance_check(root.left_child)
+    rh = balance_check(root.right_child)
+    if abs(lh - rh) > 1:
+        raise UnbalancedTree
 
-    return 1 + max(height(root.left_child), height(root.right_child))
+    return 1 + max(lh, rh)
 
 
-def sol(root: BinaryTreeNode):
-    balanced = True
-    if not root.has_children():
-        return balanced
+def sol(root: BTN):
+    try:
+        balance_check(root)
+        return True
+    except:
+        return False
