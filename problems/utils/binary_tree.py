@@ -75,6 +75,7 @@ def tree_from_list(l: list) -> BinaryTreeNode:
             for n, node in enumerate(curr):
                 # get the parent node
                 temp = layer[n // 2]
+                assert not (temp is None and not node is None)
                 if not node is None:
                     # if the node we're looking to hook up were null we wouldnt want to do anything
                     node.parent = temp
