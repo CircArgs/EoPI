@@ -1,3 +1,4 @@
+from random import shuffle
 from typing import List
 from .test_utils.read_tsv import read_tsv
 
@@ -9,13 +10,14 @@ sol_dict = {"true": True, "false": False}
 
 class test_schema:
     def __init__(self, test: List[int], sol: str, desc: str = ""):
-        self.test = [int(v) if v != "null" else None for v in test]
+        self.test = bt.tree_from_list([int(v) if v != "null" else None for v in test])
         self.sol = sol_dict[sol]
         self.desc = desc
 
 
 def test():
     test_data = read_tsv("9_1.tsv", test_schema)
-    for test in test_data:
-        tree = bt.tree_from_list(test.test)
-        assert solution.sol(tree) == test.sol, f"{test.test}; {test.sol}"
+    for test_number, test in enumerate(test_data):
+        assert (
+            solution.sol(test.test) == test.sol
+        ), f"test_number: {test_number}: {test.test}; {test.sol}"
