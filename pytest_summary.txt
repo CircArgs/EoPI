@@ -24,7 +24,7 @@ problems/_8_1/sol.py                26      3    88%
 problems/_9_1/sol.py                17      0   100%
 problems/__init__.py                 0      0   100%
 problems/utils/__init__.py           0      0   100%
-problems/utils/binary_tree.py       55     15    73%
+problems/utils/binary_tree.py       45      7    84%
 problems/utils/linked_list.py       81     15    81%
 testing/__init__.py                  3      0   100%
 testing/test_4_1.py                 11      0   100%
@@ -37,7 +37,7 @@ testing/test_9_1.py                 15      0   100%
 testing/test_utils/__init__.py       0      0   100%
 testing/test_utils/read_tsv.py      18      0   100%
 ----------------------------------------------------
-TOTAL                              453     46    90%
+TOTAL                              443     38    91%
 
 
-======================== 7 passed in 369.08s (0:06:09) =========================
+======================== 7 passed in 364.35s (0:06:04) =========================
