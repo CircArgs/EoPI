@@ -20,5 +20,5 @@ def sol(root: BTN):
     try:
         balance_check(root)
         return True
-    except:
+    except UnbalancedTree:
         return False
