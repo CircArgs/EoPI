@@ -10,7 +10,7 @@ sol_dict = {"true": True, "false": False}
 
 class test_schema:
     def __init__(self, test: List[int], sol: str, desc: str = ""):
-        self.test = bt.tree_from_list([int(v) if v != "null" else None for v in test])
+        self.test = bt.tree_from_list(test)
         self.sol = sol_dict[sol]
         self.desc = desc
 

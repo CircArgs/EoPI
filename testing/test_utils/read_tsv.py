@@ -6,8 +6,14 @@ import os
 
 
 def __interpret(s: str) -> object:
+    if s == "null":
+        return None
     try:
-        return eval(s)
+        ret = eval(s)
+        if isinstance(ret, list):
+            return [__interpret(v) for v in ret]
+        else:
+            return ret
     except:
         return s
 
